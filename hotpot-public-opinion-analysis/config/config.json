@@ -1,0 +1,9 @@
+{
+  "platforms": [
+    "weibo",
+    "bilibili",
+    "douyin",
+    "xiaohongshu"
+  ],
+  "cron": "*/10 * * * *"
+}
