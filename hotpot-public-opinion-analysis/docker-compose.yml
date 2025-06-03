@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:6.0                   # 指定 Mongo 官方镜像
+    container_name: hot-search-mongo  # 容器名字
+    restart: unless-stopped           # 容器重启策略
+    ports:
+      - "27017:27017"                 # 本地 27017 映射到容器 27017
+    volumes:
+      - ./data/mongo:/data/db         # 持久化到本地 data/mongo 目录

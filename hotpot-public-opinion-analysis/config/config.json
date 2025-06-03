@@ -2,8 +2,9 @@
   "platforms": [
     "weibo",
     "bilibili",
-    "douyin",
-    "xiaohongshu"
+    "douyin"
   ],
+  "mongoUri": "mongodb://localhost:27017/hotsearch",
+  "topN": 100,
   "cron": "*/10 * * * *"
 }
